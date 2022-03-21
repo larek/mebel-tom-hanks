@@ -2,8 +2,9 @@
   "name": "mebel-tom-hanks",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "build": "parcel build ./src/index.pug --dist-dir dist",
+    "dev": "parcel ./src/index.pug --dist-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
