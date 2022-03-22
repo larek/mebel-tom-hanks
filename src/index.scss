@@ -1,1 +1,5 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$mainColor: silver;
+@import "./mobile-nav/index.scss";
+@import "./mobile-nav-trigger/index.scss";

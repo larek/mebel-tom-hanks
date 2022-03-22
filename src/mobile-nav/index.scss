@@ -1,0 +1,23 @@
+.mobile-nav{
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: darken($mainColor, 10%);
+  transition: transform .2s;
+  transform: translate(-300px, 0px);
+  z-index: 102;
+  top: 0;
+  .mobile-nav__list {
+    padding: 10px;
+    .mobile-nav__item{
+      list-style-type: none;
+      .mobile-nav__link {
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        display: inline-block;
+        text-decoration: none;
+      }
+    }
+  }
+}
