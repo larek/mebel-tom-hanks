@@ -1,32 +1,24 @@
-<header class="bg-dark">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./img/logo.svg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          {% for link in data.headerLinks %}
-            <li class="nav-item">
-              <a class="nav-link" href="{{link.url}}">{{link.name}}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          <div class="text-white">{{data.contacts.phone}}</div>
-        </div>
-      </div>
-    </nav>
-  </div>
+<header class="bg-primary">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			<div class="container-fluid">
+				<a class="navbar-brand fw-bold text-uppercase" href="#">
+					{{data.name}}
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						{% for link in data.headerLinks %}
+							<li class="nav-item">
+								<a class="nav-link" href="{{link.url}}">{{link.name}}</a>
+							</li>
+						{% endfor %}
+					</ul>
+					<div>{{data.contacts.phone}}</div>
+				</div>
+			</div>
+		</nav>
+	</div>
 </header>

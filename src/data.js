@@ -1,5 +1,6 @@
 module.exports = {
   domain: "mebeldomann.ru",
+  name: "Мебельдома",
   contacts: {
     phone: "8-800-245-12-43",
     city: "Москва",
