@@ -18,23 +18,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          {% for link in data.headerLinks %}
             <li class="nav-item">
-              <a class="nav-link" href="#">Каталог мебели</a>
+              <a class="nav-link" href="{{link.url}}">{{link.name}}</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Доставка</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Оплата и заказ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Гарантии и возврат</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
-            </li>
+            {% endfor %}
           </ul>
-          <div class="text-white">8-910-102-99-91</div>
+          <div class="text-white">{{data.contacts.phone}}</div>
         </div>
       </div>
     </nav>
