@@ -2,9 +2,9 @@ module.exports = {
   domain: "mebeldomann.ru",
   name: "Мебельдома",
   contacts: {
-    phone: "8-800-245-12-43",
+    phone: "8 (800) 600-20-44",
     city: "Москва",
-    adress: "ул. Гурьянова, 51",
+    address: "ул. Буровая 3",
   },
   schedule: "c 8:00 до 20:00",
   categories: [
@@ -150,17 +150,60 @@ module.exports = {
       ],
     },
   ],
+  specials: [
+    {
+      name: "Популярные товары",
+      products: [
+        { name: "Комплект мебели для ванной комнаты", image: "holder.jpg" },
+        {
+          name: "Обеденная группа Лион",
+          image: "holder.jpg",
+        },
+        { name: "Кухонный стол нераскладной", image: "holder.jpg" },
+      ],
+      categories: [
+        { name: "Компьютерные кресла ", link: "#" },
+        { name: "Письменные столы", link: "#" },
+        { name: "Кресла руководителя", link: "#" },
+        { name: "Садовая мебель из ротанга", link: "#" },
+      ],
+    },
+    {
+      name: "Скидки, распродажи, акции",
+      products: [
+        { name: "Компьютерный стол для подростков", image: "holder.jpg" },
+        {
+          name: "Мебель для ванной с декором (3 предмета)",
+          image: "holder.jpg",
+        },
+        { name: "Комод купе для спальни", image: "holder.jpg" },
+      ],
+      categories: [{ name: "Игровые компьютерные столы", link: "#" }],
+    },
+    {
+      name: "Новинки",
+      products: [
+        { name: "Кресло раскладушка Вега", image: "holder.jpg" },
+        {
+          name: "Стол Фиеста",
+          image: "holder.jpg",
+        },
+        { name: "Комод для ванной", image: "holder.jpg" },
+      ],
+      categories: [],
+    },
+  ],
   headerLinks: [
     { name: "Каталог мебели", url: "#categories" },
     { name: "Доставка", url: "#delivery" },
-    { name: "Оплата и заказ", url: "#" },
+    { name: "Оплата и заказ", url: "#payment" },
     { name: "Гарантии и возврат", url: "#" },
     { name: "Контакты", url: "#contact" },
   ],
   footerLinks: [
     { name: "Каталог мебели", url: "#categories" },
     { name: "Доставка", url: "#delivery" },
-    { name: "Оплата и заказ", url: "#" },
+    { name: "Оплата и заказ", url: "#payment" },
     { name: "Гарантии и возврат", url: "#" },
     { name: "Контакты", url: "#contact" },
   ],
