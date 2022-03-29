@@ -1,0 +1,41 @@
+<!-- Start Tab -->
+<section class='bg-light' id='categories'>
+	<div class="container py-4">
+		<h2>Каталог товаров</h2>
+		<div class="d-flex align-items-start">
+			<div class="nav flex-column nav-pills me-3 flex-shrink-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+				{% for category in data.categories %}
+					<button class="nav-link text-start {% if loop.index == 1 %} active {% endif %}" id="v-pills-tab-category-{{loop.index}}" data-bs-toggle="pill" data-bs-target="#v-pills-category-{{loop.index}}" type="button" role="tab" aria-controls="v-pills-category-{{loop.index}}" aria-selected="true">
+						{{category.name}}
+					</button>
+				{% endfor %}
+			</div>
+			<div class="tab-content flex-grow-1" id="v-pills-tabContent">
+				{% for category in data.categories %}
+					<div class="tab-pane fade {% if loop.index == 1 %} show active {% endif %}" id="v-pills-category-{{loop.index}}" role="tabpanel" aria-labelledby="v-pills-tab-category-{{loop.index}}">
+						<div class="row">
+							{% for product in category.products %}
+								<div class="col-md-3">
+									<div class="card">
+										<img src="./img/{{product.image}}" class="card-img-top" alt="{{product.name}}"/>
+										<div class="card-body">
+											<h6 class="card-title">{{product.name}}</h6>
+										</div>
+									</div>
+								</div>
+							{% endfor %}
+						</div>
+						<div class="row py-2">
+							{% for item in category.categories %}
+								<div class="col-md-3 d-grid">
+								<a href="{{item.link}}" class="btn btn-block btn-outline-secondary">{{item.name}}</a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Tab -->

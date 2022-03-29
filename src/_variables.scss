@@ -89,3 +89,6 @@ $theme-colors: (
   "dark": $dark,
 ) !default;
 // scss-docs-end theme-colors-map
+
+$component-active-color: $dark !default;
+$link-color: $dark !default;
