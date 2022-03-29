@@ -23,6 +23,7 @@ const createDevServer = async (watcher) => {
     mode: "development",
     watcher,
     root: SRC,
+    publicDir: path.join(__dirname, "../public"),
     server: {
       port: 1337,
       open: true,

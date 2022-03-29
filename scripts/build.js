@@ -14,6 +14,7 @@ const SRC = path.join(__dirname, "../src");
   writeFileSync(SRC + "/index.html", html);
   await build({
     root: SRC,
+    publicDir: path.join(__dirname, "../public"),
     build: {
       outDir: path.join(__dirname, "../dist"),
       emptyOutDir: true,
