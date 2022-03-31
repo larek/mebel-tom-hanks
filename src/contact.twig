@@ -4,25 +4,35 @@
 		<div class="row mt-4">
 			<div class="col-md-4">
 				<div class="d-flex align-items-center mb-3">
-					<img src='./img/phone.svg' />
-					<div class="px-2"> {{data.contacts.phone}} </div>
+					Наш телефон:
+					<div class="px-2">
+						{{data.contacts.phone}}
+					</div>
 				</div>
 				<div class="d-flex align-items-center mb-3">
-				 	<img src="./img/geo.svg" />
-					<div class="px-2"> г. {{data.contacts.city}} {{data.contacts.address}} </div>
+					Адрес офиса продаж:
+					<div class="px-2">
+						г.
+						{{data.contacts.city}}
+						{{data.contacts.address}}
+					</div>
 				</div>
 				<div class="d-flex align-items-center mb-3">
-				 	<img src="./img/envelope.svg" />
-					<div class="px-2"> info@{{data.domain}} </div>
+					Почта:
+					<div class="px-2">
+						info@{{data.domain}}
+					</div>
 				</div>
 				<div class="d-flex align-items-center mb-3">
-				 	<img src="./img/clock.svg" />
-					<div class="px-2"> {{data.schedule}} </div>
+					Время работы:
+					<div class="px-2">
+						{{data.schedule}}
+					</div>
 				</div>
 			</div>
 			<div class="col-md-8">
 				<div class="card rounded">
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27c6e9b978fdadbc19b77799d7b9998e7788fbdadd5b2e1ca1ae84e2a2dcab0f&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A27c6e9b978fdadbc19b77799d7b9998e7788fbdadd5b2e1ca1ae84e2a2dcab0f&amp;width=100%25&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
 				</div>
 			</div>
 		</div>
