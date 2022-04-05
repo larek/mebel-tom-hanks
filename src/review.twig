@@ -2,29 +2,15 @@
 	<div class="container py-4">
 		<h2>Отзывы наших покупателей</h2>
 		<div class="row mt-4">
+			{% for item in data.reviews %}
 			<div class="col-md-4">
 				<div class="d-flex">
 					<img src="./img/person.svg" alt="person">
-					<div class='px-2 fw-bold'>Том Хэнкс</div>
+					<div class='px-2 fw-bold'>{{ item.name }}</div>
 				</div>
-				<div class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ea recusandae unde reiciendis eum soluta exercitationem error. Aliquam magnam vel, voluptas inventore odit facilis dicta asperiores veritatis consequuntur architecto itaque?</div>
+				<div class=''>{{ item.text }}</div>
 			</div>
-			<div class="col-md-4">
-				<div class="d-flex">
-					<img src="./img/person.svg" alt="person">
-					<div class='px-2 fw-bold'>Ричард Гир</div>
-				</div>
-				<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corrupti soluta autem, animi odio cumque esse earum at minus deleniti facilis recusandae numquam nostrum optio laborum explicabo alias suscipit accusamus!</div>
-			</div>
-			<div class="col-md-4">
-				<div class="d-flex">
-					<img src="./img/person.svg" alt="person">
-					<div class='px-2 fw-bold'>Леонардо Ди Каприо</div>
-				</div>
-				<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum sint explicabo exercitationem nulla iste vitae eum doloremque, quo, quaerat voluptatum aperiam natus eius quisquam recusandae harum architecto laborum ad laboriosam.</div>
-			</div>
-			<div class="col-md-4"></div>
-			<div class="col-md-4"></div>
+			{% endfor %}
 		</div>
 	</div>
 </section>
