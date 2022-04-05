@@ -15,7 +15,7 @@
 				<div class="tab-pane fade {% if loop.index == 1 %} show active {% endif %}" id="pills-{{loop.index}}" role="tabpanel" aria-labelledby="pills-{{loop.index}}-tab">
 					<div class="row">
 						{% for product in category.products %}
-							<div class="col-md-3">
+							<div class="col-6 col-md-3 mb-3">
 								<div class="card">
 									<img src="./img/{{product.image}}" class="card-img-top" alt="{{product.name}}"/>
 									<div class="card-body">
@@ -27,7 +27,7 @@
 					</div>
 					<div class="row py-2">
 						{% for item in category.categories %}
-							<div class="col-md-3 d-grid">
+							<div class="col-6 col-md-3 d-grid mb-3">
 								<a href="{{item.link}}" class="btn btn-block btn-outline-secondary">{{item.name}}</a>
 							</div>
 						{% endfor %}
