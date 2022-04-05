@@ -1,2 +1,9 @@
 User-agent: *
 Disallow: /
+Allow: /$
+Allow: /*.js
+Allow: /*.css
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
