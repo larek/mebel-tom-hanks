@@ -5,9 +5,9 @@ module.exports = {
   domain: "mebeloficenn.ru",
   name: "Мебельофис",
   contacts: {
-    phone: "8 (800) 600-20-44",
+    phone: "8 (800) 700-21-61",
     city: "Москва",
-    address: "ул. Буровая 3",
+    address: "ул. Мельникова, 3к1",
   },
   schedule: "c 8:00 до 20:00",
   categories: [
