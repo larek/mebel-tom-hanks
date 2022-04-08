@@ -5,6 +5,12 @@ module.exports = {
     "Интернет-магазин мебели в Москве: скидки до 40% на все товары для дома. Купить мебель от производителя в каталоге.",
   domain: "mebeldomann.ru",
   name: "Мебельдома",
+  metatags: [
+    {
+      name: "google-site-verification",
+      content: "jRqctDIZyH21LpRlkKT3nF-GOlOxYHKwxhYJzGf9Bj8",
+    },
+  ],
   contacts: {
     phone: "8 (800) 600-20-44",
     city: "Москва",

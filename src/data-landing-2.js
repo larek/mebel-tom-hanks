@@ -4,9 +4,12 @@ module.exports = {
     "Каталог мебели с доставкой по Москве. Купить мебель в интернет-магазине: товары для дома по доступным ценам.",
   domain: "mebeloficenn.ru",
   name: "Мебельофис",
-  verifications: {
-    google: "DPHHZQdmk8DQFLbnARDTSByffkreBfpIyYJCJ4Kk3Bg",
-  },
+  metatags: [
+    {
+      name: "google-site-verification",
+      content: "DPHHZQdmk8DQFLbnARDTSByffkreBfpIyYJCJ4Kk3Bg",
+    },
+  ],
   contacts: {
     phone: "8 (800) 700-21-61",
     city: "Москва",
