@@ -24,7 +24,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: dist/
-          remote_path: /var/www/mebeldomann.ru/
+          remote_path: ${{ secrets.LANDING_1_REMOTE_PATH }}
           remote_host: ${{ secrets.PRODUCTION_SERVER_IP_ADDRESS }}
           remote_user: root
           remote_key: ${{ secrets.SSH_BACH_PRIVATE_KEY }}
@@ -57,7 +57,7 @@ jobs:
         with:
           switches: -avzr --delete
           path: dist/
-          remote_path: /var/www/mebeloficenn.ru/
+          remote_path: ${{ secrets.LANDING_2_REMOTE_PATH }}
           remote_host: ${{ secrets.PRODUCTION_SERVER_IP_ADDRESS }}
           remote_user: root
           remote_key: ${{ secrets.SSH_BACH_PRIVATE_KEY }}
