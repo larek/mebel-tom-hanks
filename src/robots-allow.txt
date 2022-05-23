@@ -7,3 +7,4 @@ Allow: /*.png
 Allow: /*.jpg
 Allow: /*.jpeg
 Allow: /*.gif
+

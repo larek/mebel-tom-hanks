@@ -2,3 +2,4 @@ node_modules
 dist
 src/index.html
 src/data.local.js
+public/robots.txt
