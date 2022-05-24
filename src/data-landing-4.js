@@ -2,8 +2,8 @@ module.exports = {
   title: "Купить мебель в Москве: интернет-магазин мебели, каталог с ценами",
   description:
     "Каталог мебели с доставкой по Москве. Купить мебель в интернет-магазине: товары для дома по доступным ценам.",
-  domain: "mebeloficenn.ru",
-  name: "Мебельофис",
+  domain: "mebelsurprise.ru",
+  name: "Мебельсюрприз",
   metatags: [
     {
       name: "google-site-verification",
