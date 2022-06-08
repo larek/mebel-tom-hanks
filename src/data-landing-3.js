@@ -11,9 +11,9 @@ module.exports = {
     }
   ],
   contacts: {
-    phone: "8 (800) 700-21-61",
+    phone: "8 (800) 700-29-05",
     city: "Москва",
-    address: "ул. Мельникова, 3к1"
+    address: "ул. Мясницкая, 15"
   },
   schedule: "c 8:00 до 20:00",
   categories: [
